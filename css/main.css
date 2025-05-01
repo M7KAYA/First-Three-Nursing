@@ -1,0 +1,156 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --main-color: #4a90e2;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  /* position: relative; */
+}
+
+header {
+  width: 100%;
+  background-color: var(--main-color);
+  box-shadow: 0 0 10px #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+header .logo {
+  width: fit-content;
+}
+header .logo h1 {
+  margin: 0;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.landing {
+  background-color: #e7e7e7;
+  width: 100%;
+  position: relative;
+  padding: 12px 0;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #0000008f;
+}
+
+.landing .title {
+  margin: 0 4px 12px;
+}
+
+.landing .title h2 {
+  margin-bottom: 5px;
+}
+
+.landing .title ul {
+  list-style-type: none;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.landing .title ul li:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.question-block {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #fff;
+  border-left: 5px solid var(--main-color);
+}
+.question-block.correct {
+  border-left-color: #4caf50;
+}
+.question-block.incorrect {
+  border-left-color: #f44336;
+}
+button.end {
+  padding: 12px 10px;
+  font-size: 16px;
+  background: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 auto 20px;
+  display: block;
+  font-weight: bold;
+}
+#result {
+  font-size: 20px;
+  font-weight: bold;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  color: white;
+}
+.result-transition {
+  margin: 0 auto 20px;
+  padding: 10px 15px;
+}
+label {
+  display: block;
+  margin: 5px 0;
+  cursor: pointer;
+}
+#scrollToTopBtn {
+  width: 50px;
+    height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: none; /* مخفي لحد ما المستخدم يبدأ يسكروول */
+  transition: background-color 0.3s;
+}
+
+footer {
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  background-color: #2e3a59;
+  color: white;
+}
+footer p {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+footer p:first-of-type i {
+  color: red;
+}
+
+footer span a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
