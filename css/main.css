@@ -136,7 +136,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
+  text-align: center;
+  padding: 30px 15px;
   background-color: #2e3a59;
   color: white;
 }
